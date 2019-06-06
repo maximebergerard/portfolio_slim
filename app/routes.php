@@ -40,4 +40,22 @@ $app
     ->setName('works')
 ;
 
+$app
+    ->get(
+        '/about',
+        function($request, $response)
+        {
+            $query = $this->db->query('SELECT * FROM projects');
+            $projects = $query->fetchAll();
+
+            // View data
+            $viewData = [];
+            $viewData['projects'] = $projects;
+
+            return $this->view->render($response, 'pages/about.twig', $viewData);
+        }
+    )
+    ->setName('about')
+;
+
 

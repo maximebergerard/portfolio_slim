@@ -1,16 +1,16 @@
 body
 {
-    overflow-x: hidden;
-    font-size: 62.5%;
     width: 100vw;
     height: 100vh;
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 .main
 {
-    padding-top: 10vh;
     background: linear-gradient(360deg, #0561E5 0%, #131784 100%);
     color: white;
+    padding-top: 10vh;
 }
 
 /* Nav bar */
@@ -35,11 +35,11 @@ nav a:hover
 
 nav .dropdown-item
 {
-    color: white;
     font-size: 1.4em;
+    color: rgb(255, 255, 255);
 }
 
-/* Main */
+/* Home page */
 
 .description h1
 {
@@ -66,7 +66,7 @@ nav .dropdown-item
 
 }
 
-/* Lazy */
+/* Lazy loading */
 
 
  .lazy
@@ -104,13 +104,18 @@ nav .dropdown-item
      background-repeat: no-repeat;
  }
 
-/* Works */
+/* Works page */
+
+.anchor:nth-child(2)
+{
+    margin-top: 10vh;
+}
 
 .works
 {
-    margin-top: 10vh;
     width: 100vw;
     height: 90vh;
+    margin-top: 10vh;
 }
 
 .works .row
@@ -130,10 +135,10 @@ nav .dropdown-item
 
 .works h2
 {
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 7.0em;
     font-weight: 700;
+    color: white;
 }
 
 .works li
@@ -142,24 +147,65 @@ nav .dropdown-item
 }
 .works .description
 {
-    color: #EBC245;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2em;
     font-weight: 500;
     list-style: none;
+    color: rgb(209, 206, 197);
 }
 
 .works .current
 {
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.8em;
     list-style: none;
     margin-top: -20px;
+    color: white;
 }
 
-.column
+.works .column
 {
     height: 90vh;
 }
 
+.works a
+{
+    font-size: 2.4em;
+}
+
+/*  Contact page  */
+
+.contact, .error
+{
+    height: 100vh;
+    padding-top:20vh; 
+    background: linear-gradient(360deg, #0561E5 0%, #131784 100%);
+    color: white;
+}
+
+.contact h1, .error h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.0em;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.contact a
+{
+    color: white;
+    font-size: 2.6em;
+}
+
+.contact img
+{
+    width: 50px;
+    margin-right: 20px;
+}
+
+/* Error page */
+
+.error a
+{
+    font-size: 2.6em;
+}
