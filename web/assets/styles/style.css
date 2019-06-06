@@ -1,0 +1,165 @@
+body
+{
+    overflow-x: hidden;
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main
+{
+    padding-top: 10vh;
+    background: linear-gradient(360deg, #0561E5 0%, #131784 100%);
+    color: white;
+}
+
+/* Nav bar */
+
+nav
+{
+    height: 10vh;
+}
+
+nav a
+{
+    font-size: 2.2em;
+    color: white;
+
+}
+nav a:hover
+{
+    text-decoration: none;
+    color: white;
+
+}
+
+nav .dropdown-item
+{
+    color: white;
+    font-size: 1.4em;
+}
+
+/* Main */
+
+.description h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5.0em;
+    font-weight: 700;
+    margin: 0;
+    margin-left: -2px;
+}
+
+.description span
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4em;
+    font-weight: 500;
+    margin: 0;
+}
+.description h2
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4em;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+/* Lazy */
+
+
+ .lazy
+ {
+     opacity: 0;
+     transition: opacity 1s;
+     will-change: opacity;
+ }
+ 
+ .lazy.loaded
+ {
+     opacity: 1;
+ }
+ 
+ .image
+ {
+     position: relative;
+     width: 100vw;
+     height: 90vh;
+     overflow: hidden;
+     box-sizing: border-box;
+     float: left;
+     justify-content: flex-start;
+ }
+ 
+ .image .inner
+ {
+     position: absolute;
+     top: 0%;
+     right: 0%;
+     bottom: 0%;
+     left: 0%;
+     background-position: left bottom;
+     background-size: 50vh;
+     background-repeat: no-repeat;
+ }
+
+/* Works */
+
+.works
+{
+    margin-top: 10vh;
+    width: 100vw;
+    height: 90vh;
+}
+
+.works .row
+{
+    width: 100vw;
+    margin-right: 0;
+}
+
+.works:nth-child(2)
+{
+    height: 100vh;
+}
+.works:not(:nth-child(2))
+{
+    margin-top: -10vh;
+}
+
+.works h2
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7.0em;
+    font-weight: 700;
+}
+
+.works li
+{
+    width: 110px;
+}
+.works .description
+{
+    color: #EBC245;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    font-weight: 500;
+    list-style: none;
+}
+
+.works .current
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    list-style: none;
+    margin-top: -20px;
+}
+
+.column
+{
+    height: 90vh;
+}
+

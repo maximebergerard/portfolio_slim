@@ -1,0 +1,22 @@
+{% include 'partials/header.twig' %}
+    <div class="container-fluid main">
+        <div class="row justify-content-center d-flex overflow-hidden">
+            <div class="col col-5 d-flex justify-content-end align-items-center">
+                <div class="description">
+                    <span>Hello I am...</span>
+                    <h1>{{ title }}</h1>
+                    <h2>Web Developer</h2>
+                    <div class="discover">
+                        <a href="{{ base_url() }}/works" class=" btn btn-primary mt-5">Discover</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col col-5">
+                <div class="image">
+                    <div data-src="./assets/images/fond.png" class="lazy inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% include 'partials/footer.twig' %}

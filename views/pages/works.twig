@@ -1,0 +1,28 @@
+{% include 'partials/header.twig' %}
+
+{% for _project in projects %}
+    <div id="{{ _project.name }}" class="works" style="background: radial-gradient(838.38px at 50% 49.75%, #8487A0 0%, #{{ _project.color }} 100%);">
+        <div class="row justify-content-lg-center column align-items-center">
+            <div class="col col-lg-3 title d-flex align-items-md-end align-items-center flex-column">
+                <h2 class="text-uppercase">{{ _project.name }}</h2>
+                <ul class="d-flex description">
+                    <li class="text-center">Date</li>
+                    <li class="text-center">Role</li>
+                    <li class="text-center">Client</li>
+                </ul>
+                <ul class="d-flex current">
+                    <li class="text-center">{{ _project.date }}</li>
+                    <li class="text-center">{{ _project.role }}</li>
+                    <li class="text-center">{{ _project.client }}</li>
+                </ul>
+            </div>
+            <div class="col col-lg-3 d-flex 
+            justify-content-sm-center justify-content-md-start">
+                <img src="{{ base_url() }}/assets/images/{{ _project.image }}" alt="Logo projet">
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% include 'partials/footer.twig' %}
+
